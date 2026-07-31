@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #EAF7EA, #d2f1d2);
+    color: #222;
+}
+
+/* ===========================
+   Result Section
+=========================== */
+
+.result-section {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.result-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 25px;
+}
+
+
+/* ===========================
+   Result Card
+=========================== */
+
+.result-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 40px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.08);
+}
+
+
+/* ===========================
+   Carbon Value
+=========================== */
+
+.footprint-result {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#carbonValue {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #2e7d32;
+}
+
+.unit {
+    display: block;
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.result-description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+
+/* ===========================
+   Scale
+=========================== */
+
+.carbon-scale-container {
+    position: relative;
+    margin-top: 60px;
+}
+
+.carbon-scale {
+    height: 18px;
+    border-radius: 30px;
+
+    background: linear-gradient(
+        to right,
+        #2ecc71 0%,
+        #2ecc71 13.33%,
+
+        #f1c40f 13.33%,
+        #f1c40f 33.33%,
+
+        #f39c12 33.33%,
+        #f39c12 66.66%,
+
+        #e74c3c 66.66%,
+        #e74c3c 100%
+    );
+}
+
+
+/* ===========================
+   Global Marker
+=========================== */
+
+.global-marker {
+    position: absolute;
+    left: 31.3%;
+    bottom: 30px;
+
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.global-dot {
+    width: 8px;
+    height: 8px;
+
+    background: #105c09;
+    border: 3px solid white;
+    border-radius: 50%;
+
+    margin: 0 auto 8px;
+
+    box-shadow: 0 0 8px rgba(0,0,0,.25);
+}
+
+.global-marker span {
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+
+/* ===========================
+   User Marker
+=========================== */
+
+.user-marker {
+    position: absolute;
+    left: 41%;
+
+    bottom: 30px;
+
+    transform: translateX(-50%);
+    transition: left .5s ease;
+    text-align: center;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+
+    margin: 0 auto 8px;
+
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 12px solid #2c3e50;
+}
+
+.user-marker span {
+    font-size: .85rem;
+    font-weight: 700;
+}
+
+
+/* ===========================
+   Scale Labels
+=========================== */
+
+.scale-labels {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 12px;
+
+    color: #555;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+
+/* ===========================
+   Comparison Message
+=========================== */
+
+.comparison-message {
+    margin-top: 40px;
+
+    text-align: center;
+
+    font-size: 1.15rem;
+    font-weight: 600;
+
+    color: #2e7d32;
+}
+
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width:768px){
+
+    .result-card{
+        padding:25px;
+    }
+
+    #carbonValue{
+        font-size:3rem;
+    }
+
+    .unit{
+        font-size:1rem;
+    }
+
+    .global-marker span,
+    .user-marker span{
+        font-size:.7rem;
+    }
+
+    .scale-labels{
+        font-size:.75rem;
+    }
+
+}

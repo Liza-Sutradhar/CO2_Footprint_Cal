@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportation Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="css/qs.css">
+</head>
+
+<body>
+    <main>
+        <div>
+            <h2>Transportation</h2>
+        </div>
+        <section class="container">
+            <section class="Questionnaries-2">
+                <h3>What is your main mode of transportation?</h3>
+                <div class="radio-group">
+                <label>
+                    <input type="radio" name="main_transport" value="bicycle">
+                    🚲 Bicycle
+                </label>
+                <label>
+                    <input type="radio" name="main_transport" value="bus">
+                    🚌 Bus
+                </label>
+                <label>
+                    <input type="radio" name="main_transport" value="train">
+                    🚆 Train/Metro
+                </label>
+                <label>
+                    <input type="radio" name="main_transport" value="motorcycle">
+                    🏍️ Motorcycle/Scooter
+                </label>
+                <label>
+                    <input type="radio" name="main_transport" value="petrol_car">
+                    🚗 Petrol car
+                </label>
+                <label>
+                    <input type="radio" name="main_transport" value="diesel_car">
+                    🚗 Diesel car
+                </label>
+                <label>
+                    <input type="radio" name="main_transport" value="taxi">
+                    🚕 Taxi/Ride-sharing
+                </label>
+              </div>
+            </section>
+
+            <section class="Questionnaries">
+                <h3>On average, how many days per week do you travel?</h3>
+                <div class="radio-group">
+                <label>
+                    <input type="radio" name="travel_days" value="0-1">
+                    0–1 days
+                </label>
+                <label>
+                    <input type="radio" name="travel_days" value="2-3">
+                    2–3 days
+                </label>
+                <label>
+                    <input type="radio" name="travel_days" value="4-5">
+                    4–5 days
+                </label>
+                <label>
+                    <input type="radio" name="travel_days" value="6-7">
+                    6–7 days
+                </label>
+                </div>
+            </section>
+
+            <section class="Questionnaries">
+                <h3>Approximately how far do you travel on a typical day?</h3>
+                <div class="radio-group">
+                <label>
+                    <input type="radio" name="daily_distance" value="less-than-5">
+                    Less than 5 km
+                </label>
+                <label>
+                    <input type="radio" name="daily_distance" value="5-10">
+                    5–10 km
+                </label>
+                <label>
+                    <input type="radio" name="daily_distance" value="10-20">
+                    10–20 km
+                </label>
+                <label>
+                    <input type="radio" name="daily_distance" value="20-40">
+                    20–40 km
+                </label>
+                <label>
+                    <input type="radio" name="daily_distance" value="more-than-40">
+                    More than 40 km
+                </label>
+                </div>
+            </section>
+
+            <section class="Questionnaries">
+                <h3>If you usually travel by car, how many people are typically in the vehicle?</h3>
+                <div class="radio-group">
+                <label>
+                    <input type="radio" name="car_passengers" value="dont_use_car">
+                    I don't use a car
+                </label>
+                <label>
+                    <input type="radio" name="car_passengers" value="just_me">
+                    Just me
+                </label>
+                <label>
+                    <input type="radio" name="car_passengers" value="two_people">
+                    2 people
+                </label>
+                <label>
+                    <input type="radio" name="car_passengers" value="three_people">
+                    3 people
+                </label>
+                <label>
+                    <input type="radio" name="car_passengers" value="four_or_more">
+                    4 or more people
+                </label>
+                </div>
+            </section>
+
+            <section class="Questionnaries">
+                <h3>How many flights have you taken in the last 12 months?</h3>
+                <div class="radio-group">
+                <label>
+                    <input type="radio" name="flights_last_year" value="none">
+                    None
+                </label>
+                <label>
+                    <input type="radio" name="flights_last_year" value="1-2-short-haul">
+                    1–2 short-haul flights
+                </label>
+                <label>
+                    <input type="radio" name="flights_last_year" value="3-5-short-haul">
+                    3–5 short-haul flights
+                </label>
+                <label>
+                    <input type="radio" name="flights_last_year" value="1-2-long-haul">
+                    1–2 long-haul flights
+                </label>
+                <label>
+                    <input type="radio" name="flights_last_year" value="more-than-2-long-haul">
+                    More than 2 long-haul flights
+                </label>
+                </div>
+            </section>
+
+            <section class="Questionnaries">
+                <h3>6. Do you regularly use public transportation?</h3>
+                <div class="radio-group">
+                <label>
+                    <input type="radio" name="public_transport_usage" value="never">
+                    Never
+                </label>
+                <label>
+                    <input type="radio" name="public_transport_usage" value="rarely">
+                    Rarely
+                </label>
+                <label>
+                    <input type="radio" name="public_transport_usage" value="sometimes">
+                    Sometimes
+                </label>
+                <label>
+                    <input type="radio" name="public_transport_usage" value="often">
+                    Often
+                </label>
+                <label>
+                    <input type="radio" name="public_transport_usage" value="almost_every_day">
+                    Almost every day
+                </label>
+                </div>
+            </section>
+
+            <section class="Questionnaries">
+                <h3>What fuel does your vehicle use?</h3>
+                <p>Only show this if the user selected a car or motorcycle.</p>
+                <div class="radio-group">
+                <label>
+                    <input type="radio" name="vehicle_fuel" value="petrol">
+                    Petrol
+                </label>
+                <label>
+                    <input type="radio" name="vehicle_fuel" value="diesel">
+                    Diesel
+                </label>
+                <label>
+                    <input type="radio" name="vehicle_fuel" value="hybrid">
+                    Hybrid
+                </label>
+                <label>
+                    <input type="radio" name="vehicle_fuel" value="electric">
+                    Electric
+                </label>
+                </div>
+            </section>
+        </section>
+
+        <div>
+            <button class="button"><a href="HomeEnergy.html">Next</a></button>
+        </div>
+    </main>
+</body>
+</html>

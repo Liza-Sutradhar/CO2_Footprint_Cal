@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Energy Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="css/qs.css">
+</head>
+
+<body>
+    <main>
+        <div>
+            <h2>Home Energy</h2>
+        </div>
+
+        <section class="container">
+            <section class="Questionnaries">
+                <h3>1. How many people live in your home?</h3>
+                <label>
+                    <input type="radio" name="household_size" value="1">
+                    1
+                </label>
+                <label>
+                    <input type="radio" name="household_size" value="2">
+                    2
+                </label>
+                <label>
+                    <input type="radio" name="household_size" value="3-4">
+                    3–4
+                </label>
+                <label>
+                    <input type="radio" name="household_size" value="5-6">
+                    5–6
+                </label>
+                <label>
+                    <input type="radio" name="household_size" value="more-than-6">
+                    More than 6
+                </label>
+                <p>(This helps estimate energy use per person.)</p>
+            </section>
+
+            <section class="Questionnaries">
+                <h3>2. What type of home do you live in?</h3>
+                <label>
+                    <input type="radio" name="home_type" value="apartment">
+                    Apartment/Flat
+                </label>
+                <label>
+                    <input type="radio" name="home_type" value="small-house">
+                    Small house
+                </label>
+                <label>
+                    <input type="radio" name="home_type" value="medium-house">
+                    Medium house
+                </label>
+                <label>
+                    <input type="radio" name="home_type" value="large-house">
+                    Large house
+                </label>
+                <p>(Larger homes usually require more energy.)</p>
+            </section>
+
+            <section class="Questionnaries">
+                <h3>3. How much electricity does your household use each month?</h3>
+                <label>
+                    <input type="radio" name="electricity_use" value="less-than-100">
+                    Less than 100 kWh
+                </label>
+                <label>
+                    <input type="radio" name="electricity_use" value="100-200">
+                    100–200 kWh
+                </label>
+                <label>
+                    <input type="radio" name="electricity_use" value="200-400">
+                    200–400 kWh
+                </label>
+                <label>
+                    <input type="radio" name="electricity_use" value="more-than-400">
+                    More than 400 kWh
+                </label>
+                <label>
+                    <input type="radio" name="electricity_use" value="dont-know">
+                    I don't know
+                </label>
+                <p>If you don't know, select "I don't know" and answer the next estimated questions.</p>
+            </section>
+
+            <section class="Questionnaries">
+                <h3>4. How often do you use air conditioning?</h3>
+                <label>
+                    <input type="radio" name="ac_usage" value="never">
+                    Never
+                </label>
+                <label>
+                    <input type="radio" name="ac_usage" value="occasionally">
+                    Occasionally
+                </label>
+                <label>
+                    <input type="radio" name="ac_usage" value="few-hours">
+                    A few hours a day
+                </label>
+                <label>
+                    <input type="radio" name="ac_usage" value="most-day">
+                    Most of the day
+                </label>
+                <label>
+                    <input type="radio" name="ac_usage" value="almost-all-day">
+                    Almost all day
+                </label>
+            </section>
+
+            <section class="Questionnaries">
+                <h3>5. What type of lighting does your home mainly use?</h3>
+                <label>
+                    <input type="radio" name="lighting_type" value="led">
+                    LED bulbs
+                </label>
+                <label>
+                    <input type="radio" name="lighting_type" value="mostly-led">
+                    Mostly LED, some incandescent/CFL
+                </label>
+                <label>
+                    <input type="radio" name="lighting_type" value="mostly-incandescent">
+                    Mostly incandescent/CFL
+                </label>
+                <label>
+                    <input type="radio" name="lighting_type" value="dont-know">
+                    I don't know
+                </label>
+            </section>
+
+            <section class="Questionnaries">
+                <h3>6. How do you usually heat water?</h3>
+                <label>
+                    <input type="radio" name="water_heating" value="solar">
+                    Solar water heater
+                </label>
+                <label>
+                    <input type="radio" name="water_heating" value="electric">
+                    Electric heater
+                </label>
+                <label>
+                    <input type="radio" name="water_heating" value="gas">
+                    Gas heater
+                </label>
+                <label>
+                    <input type="radio" name="water_heating" value="dont-know">
+                    I don't know
+                </label>
+            </section>
+
+            <section class="Questionnaries">
+                <h3>7. Which appliances do you use regularly?</h3>
+                <label>
+                    <input type="checkbox" name="appliances" value="air-conditioner">
+                    Air conditioner
+                </label>
+                <label>
+                    <input type="checkbox" name="appliances" value="refrigerator">
+                    Refrigerator
+                </label>
+                <label>
+                    <input type="checkbox" name="appliances" value="washing-machine">
+                    Washing machine
+                </label>
+                <label>
+                    <input type="checkbox" name="appliances" value="clothes-dryer">
+                    Clothes dryer
+                </label>
+                <label>
+                    <input type="checkbox" name="appliances" value="dishwasher">
+                    Dishwasher
+                </label>
+                <label>
+                    <input type="checkbox" name="appliances" value="electric-oven">
+                    Electric oven
+                </label>
+                <label>
+                    <input type="checkbox" name="appliances" value="microwave">
+                    Microwave
+                </label>
+                <label>
+                    <input type="checkbox" name="appliances" value="electric-kettle">
+                    Electric kettle
+                </label>
+            </section>
+
+            <section class="Questionnaries">
+                <h3>8. Do you usually switch off lights and electronics when not in use?</h3>
+                <label>
+                    <input type="radio" name="power_off_habits" value="always">
+                    Always
+                </label>
+                <label>
+                    <input type="radio" name="power_off_habits" value="often">
+                    Often
+                </label>
+                <label>
+                    <input type="radio" name="power_off_habits" value="sometimes">
+                    Sometimes
+                </label>
+                <label>
+                    <input type="radio" name="power_off_habits" value="rarely">
+                    Rarely
+                </label>
+                <label>
+                    <input type="radio" name="power_off_habits" value="never">
+                    Never
+                </label>
+            </section>
+
+            <section class="Questionnaries">
+                <h3>9. Does your home use renewable energy?</h3>
+                <label>
+                    <input type="radio" name="renewable_energy" value="yes-mostly">
+                    Yes, mostly
+                </label>
+                <label>
+                    <input type="radio" name="renewable_energy" value="yes-partially">
+                    Yes, partially
+                </label>
+                <label>
+                    <input type="radio" name="renewable_energy" value="no">
+                    No
+                </label>
+                <label>
+                    <input type="radio" name="renewable_energy" value="dont-know">
+                    I don't know
+                </label>
+            </section>
+
+            <section class="Questionnaries">
+                <h3>10. Approximately how many hours per day are people at home?</h3>
+                <label>
+                    <input type="radio" name="hours_at_home" value="less-than-6">
+                    Less than 6 hours
+                </label>
+                <label>
+                    <input type="radio" name="hours_at_home" value="6-10">
+                    6–10 hours
+                </label>
+                <label>
+                    <input type="radio" name="hours_at_home" value="10-16">
+                    10–16 hours
+                </label>
+                <label>
+                    <input type="radio" name="hours_at_home" value="almost-all-day">
+                    Almost all day
+                </label>
+            </section>
+        </section>
+
+        <div>
+            <button class="button"><a href="FoodWastage.html">Next</a></button>
+        </div>
+    </main>
+</body>
+</html>
